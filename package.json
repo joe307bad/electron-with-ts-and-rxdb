@@ -1,0 +1,65 @@
+{
+  "name": "minimal-electron-webpack-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "This is the samplest minimalistic boilerplate that uses Electron, Webpack and TypeScript. Both renderer and main process in TypeScript and built using Webpack.",
+  "bugs": {
+    "url": "https://github.com/Eshva/minimal-electron-webpack-typescript-boilerplate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eshva/minimal-electron-webpack-typescript-boilerplate.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mike Eshva",
+    "email": "reg@eshva.ru"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js && cpx src/renderer/index.html output/compiled/renderer && cpx src/main/package.json output/compiled",
+    "package": "electron-builder",
+    "start": "yarn build && electron output/compiled"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-pouchdb": "^4.2.0",
+    "pouchdb": "^7.2.1",
+    "pouchdb-server": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/electron": "^1.6.10",
+    "@types/node": "12.0.7",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "cpx": "1.5.0",
+    "css-loader": "^3.5.3",
+    "electron": "9.0.0",
+    "electron-builder": "20.43.0",
+    "file-loader": "^6.0.0",
+    "fork-ts-checker-webpack-plugin": "^4.1.6",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "3.2.0",
+    "image-webpack-loader": "^6.0.0",
+    "npm-run-all": "4.1.5",
+    "pouchdb-adapter-http": "^7.2.1",
+    "pouchdb-adapter-memory": "^7.2.1",
+    "pouchdb-promise": "^6.4.3",
+    "rxdb": "^9.0.0",
+    "rxjs": "^6.5.5",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "6.0.2",
+    "tslint": "5.17.0",
+    "typescript": "3.9.3",
+    "url-loader": "^4.1.0",
+    "webpack": "4.33.0",
+    "webpack-cli": "3.3.3"
+  },
+  "resolutions": {
+    "pouchdb-promise": "6.4.3"
+  }
+}

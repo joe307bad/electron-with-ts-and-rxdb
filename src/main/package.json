@@ -1,0 +1,8 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "This is the samplest minimalistic boilerplate that uses Electron, Webpack and TypeScript. Both renderer and main process in TypeScript and built using Webpack.",
+  "author": "Mike Eshva",
+  "main": "main/main-bundle.js",
+  "license": "MIT"
+}
