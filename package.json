@@ -20,7 +20,7 @@
     "start": "yarn build && electron output/compiled"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-pouchdb": "^4.2.0",
     "pouchdb": "^7.2.1",
     "pouchdb-server": "^4.2.0"
